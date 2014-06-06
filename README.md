@@ -4,6 +4,8 @@ babypandas
 Very quick hack, making a pure python implementation of Pandas'
 DataFrame/Series (very incomplete and hacky!!)
 
+![Logo](http://images.boomsbeat.com/data/images/full/3006/baby-panda_4-jpg.jpg)
+
 Note currently doesn't have index support. Just the very, very, very basics.
 
 Hi, I wrote this as I need to rewrite some code to use pure python, instead of
