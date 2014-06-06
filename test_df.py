@@ -69,6 +69,8 @@ class TestDF:
         assert self.df['a'] == d
         d = self.df['a'] * 2
         assert d == [2, 6]
+        d = 2 * self.df['a']
+        assert d == [2, 6]
 
     def test_bool_comparison_between_series(self):
         result = self.df['a'] == self.df['a']

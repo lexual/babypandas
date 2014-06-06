@@ -48,4 +48,11 @@ e.g.
 
         # filter
         data = [row for row in data if row['a'] > 1]
+        # vs
         df = df[df['a'] > 1]
+
+        # percentage
+        tot = sum(row['a'] for row in data)
+        data = [dict(row, pct=(100.0 * row[a'] / tot) for row in data]
+        # vs
+        df['pct'] = 100.0 * df['a'] * df['a'].sum()

@@ -72,6 +72,9 @@ class Series(list):
         else:
             return [x * other for x in self]
 
+    def __rmul__(self, other):
+        return self.__mul__(other)
+
     @return_series
     def __div__(self, other):
         if hasattr(other, '__iter__'):
